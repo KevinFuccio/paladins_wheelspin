@@ -4,7 +4,7 @@ import { Champion } from '../interfaces/Champion';
 import urls from './championsUrls';
 
 const isLoaderVisible = (v: boolean) => {
-  const ldsContainer = document.querySelector('.lds-container');
+  const ldsContainer = document.querySelector('.loader');
   if (ldsContainer) {
     ldsContainer.classList.toggle('hide', !v);
   }

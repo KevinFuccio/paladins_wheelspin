@@ -1,4 +1,4 @@
-import './WheelButton.scss';
+import { Button, Container } from './Styles/WheelButton.styled';
 
 type WheelButtonProps = {
   event: () => void;
@@ -11,18 +11,17 @@ function WheelButton({ event, isDisabled }: WheelButtonProps) {
     }
   };
   return (
-    <div className="content-container">
-      <div className="pre">
-        <button
+    <Container>
+      <div>
+        <Button
           id="spin"
-          type="button"
           disabled={isDisabled}
           onClick={() => handleButtonClick()}
         >
           Spin
-        </button>
+        </Button>
       </div>
-    </div>
+    </Container>
   );
 }
 export default WheelButton;
