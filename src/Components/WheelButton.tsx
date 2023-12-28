@@ -1,6 +1,5 @@
 import { Button } from './Styles/WheelButton.styled';
 import Container from './Styles/WheelContent.style';
-import './WheelButton.scss';
 import WheelButtonProps from './types';
 
 function WheelButton({ event, isDisabled }: WheelButtonProps) {
