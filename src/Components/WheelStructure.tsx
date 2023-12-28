@@ -19,7 +19,7 @@ function WheelStructure() {
   const fetchData = async () => {
     const allChampions = await getAllChampions();
     setChampions(allChampions);
-    setSlice(sliceCalc(allChampions.length));
+    setSlice(sliceCalc(allChampions?.length));
   };
 
   const startRotation = async () => {
@@ -39,7 +39,7 @@ function WheelStructure() {
     fetchData();
   }, []);
 
-  const slicesArray = champions.map((champion, index) => (
+  const slicesArray = champions?.map((champion, index) => (
     <WheelSlice
       key={champion.id}
       championName={champion.name}
